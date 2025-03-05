@@ -3,7 +3,7 @@
 This repository contains the code to process the StudentLife Dataset, run self-regulated learning (SRL) behavior prediction experiments, and analyze the results. The goal of this project is to predict future SRL behaviors using deep learning models trained on life-log data. The task is defined as a regression problem, where historical behavioral data is used to predict future SRL scores (OSLQ scores) without introducing any decision boundaries. Four deep learning architectures are evaluated: Multilayer Perceptron (MLP), Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN), and Temporal Convolutional Network (TCN).
 
 ## Repository Structure
-
+```
 SRL-Behavior-Prediction/
 ├── data/                     # Directory for raw and processed datasets
 │   ├── raw/                  # Raw sensor data (e.g., activity, calls, SMS, sleep, location, app usage)
@@ -27,7 +27,7 @@ SRL-Behavior-Prediction/
 │
 ├── README.md                 # Project overview and instructions
 └── requirements.txt          # Python dependencies
-
+```
 
 ## Workflow
 
