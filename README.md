@@ -5,7 +5,6 @@ This repository contains the code to process the StudentLife Dataset, run self-r
 ## Repository Structure
 
 SRL-Behavior-Prediction/
-│
 ├── data/                     # Directory for raw and processed datasets
 │   ├── raw/                  # Raw sensor data (e.g., activity, calls, SMS, sleep, location, app usage)
 │   └── processed/            # Processed datasets (e.g., preprocessed_data.csv, time_windows_dataset.csv)
@@ -28,7 +27,6 @@ SRL-Behavior-Prediction/
 │
 ├── README.md                 # Project overview and instructions
 └── requirements.txt          # Python dependencies
-
 
 
 ## Workflow
