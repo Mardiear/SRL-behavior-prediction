@@ -44,10 +44,10 @@ The raw sensor data is preprocessed to extract meaningful features for predictin
 
 #### Example Usage:
 
-```bash
+```
 python src/preprocessing/data_preprocessing.py
 python src/preprocessing/time_windows.py
-
+```
 ### 2. Hyperparameter Tuning
 
 Hyperparameter tuning is performed for each deep learning architecture (MLP, LSTM, CNN, TCN) using Bayesian optimization. The tuning process evaluates different configurations to identify the best-performing hyperparameters.
@@ -59,12 +59,12 @@ Hyperparameter tuning is performed for each deep learning architecture (MLP, LST
 - `tuning/tune_tcn.py`: Tunes hyperparameters for the TCN model.
 
 #### Example Usage:
-```bash
+```
 python src/tuning/tune_mlp.py
 python src/tuning/tune_lstm.py
 python src/tuning/tune_cnn.py
 python src/tuning/tune_tcn.py
-
+```
 ### 3. Model Training and Evaluation
 
 The four deep learning models are trained and evaluated using the preprocessed dataset. The models are compared based on their performance in predicting future SRL scores.
@@ -74,9 +74,11 @@ The four deep learning models are trained and evaluated using the preprocessed d
 - `evaluate_models.py`: Evaluates the trained models and computes performance metrics (e.g., MSE, MAE).
 
 #### Example Usage:
-```bash
+```
 python src/experiments/train_models.py
 python src/experiments/evaluate_models.py
+```
+
 ### 4. Experiment Results
 
 The results of the experiments are processed and analyzed to gain insights into the performance of the models. Statistical tests and visualizations are used to compare the models and evaluate the impact of individual differences.
@@ -86,9 +88,11 @@ The results of the experiments are processed and analyzed to gain insights into 
 - `plot_results.py`: Creates plots and graphs for the results.
 
 #### Example Usage:
-```bash
+```
 python src/experiments/experiments_results.py
 python src/experiments/plot_results.py
+```
+
 ## Key Features
 
 ### Time Windows Definition
@@ -113,8 +117,9 @@ A total of 96 architectures are generated during hyperparameter tuning, with 100
 ## Usage
 
 ### Install Dependencies:
-```bash
+```
 pip install -r requirements.txt
+```
 ### Download the Dataset:
 
 Place the raw sensor data in the `data/raw/` directory.
@@ -123,28 +128,33 @@ Place the raw sensor data in the `data/raw/` directory.
 
 #### Preprocess the data:
 
-```bash
+```
 python src/preprocessing/data_preprocessing.py
 python src/preprocessing/time_windows.py
+```
+
 ### Tune hyperparameters:
 
-```bash
+```
 python src/tuning/tune_mlp.py
 python src/tuning/tune_lstm.py
 python src/tuning/tune_cnn.py
 python src/tuning/tune_tcn.py
+```
 
 ### Train and evaluate models:
 
-```bash
+```
 python src/experiments/train_models.py
 python src/experiments/evaluate_models.py
+```
 
 ### Analyze results:
 
-```bash
+```
 python src/experiments/experiments_results.py
 python src/experiments/plot_results.py
+```
 
 ## Results
 
