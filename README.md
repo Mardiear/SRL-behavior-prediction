@@ -1,5 +1,5 @@
 # SRL-behavior-prediction
-This repository contains the code to run sedentary behaviour prediction experiments and process the results.
+This repository contains the code to process the StudentLife Dataset, run sedentary behaviour prediction experiments and process the results.
 
 ## Process the dataset
 
