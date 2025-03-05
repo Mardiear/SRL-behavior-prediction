@@ -4,7 +4,31 @@ This repository contains the code to process the StudentLife Dataset, run self-r
 
 ## Repository Structure
 
-SRL-Behavior-Prediction/ │ ├── data/ # Directory for raw and processed datasets │ ├── raw/ # Raw sensor data (e.g., activity, calls, SMS, sleep, location, app usage) │ └── processed/ # Processed datasets (e.g., preprocessed_data.csv, time_windows_dataset.csv) │ ├── models/ # Trained models (e.g., MLP, LSTM, CNN, TCN) │ ├── results/ # Experiment results and visualizations │ ├── figures/ # Plots and graphs │ └── metrics/ # Performance metrics (e.g., MSE, MAE) │ ├── src/ # Source code │ ├── preprocessing/ # Data preprocessing scripts │ ├── tuning/ # Hyperparameter tuning scripts │ ├── experiments/ # Experiment execution scripts │ └── utils/ # Utility functions and helpers │ ├── pkl/ # Pickle files for checkpoints and intermediate results │ ├── tuning/ # Hyperparameter tuning checkpoints │ └── experiments/ # Experiment results │ ├── README.md # Project overview and instructions └── requirements.txt # Python dependencies
+SRL-Behavior-Prediction/
+│
+├── data/                     # Directory for raw and processed datasets
+│   ├── raw/                  # Raw sensor data (e.g., activity, calls, SMS, sleep, location, app usage)
+│   └── processed/            # Processed datasets (e.g., preprocessed_data.csv, time_windows_dataset.csv)
+│
+├── models/                   # Trained models (e.g., MLP, LSTM, CNN, TCN)
+│
+├── results/                  # Experiment results and visualizations
+│   ├── figures/              # Plots and graphs
+│   └── metrics/              # Performance metrics (e.g., MSE, MAE)
+│
+├── src/                      # Source code
+│   ├── preprocessing/        # Data preprocessing scripts
+│   ├── tuning/               # Hyperparameter tuning scripts
+│   ├── experiments/          # Experiment execution scripts
+│   └── utils/                # Utility functions and helpers
+│
+├── pkl/                      # Pickle files for checkpoints and intermediate results
+│   ├── tuning/               # Hyperparameter tuning checkpoints
+│   └── experiments/          # Experiment results
+│
+├── README.md                 # Project overview and instructions
+└── requirements.txt          # Python dependencies
+
 
 
 ## Workflow
