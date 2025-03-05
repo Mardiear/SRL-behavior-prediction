@@ -3,7 +3,7 @@ This repository contains the code to run sedentary behaviour prediction experime
 
 ## Process the dataset
 
-- Download the dataset: https://studentlife.cs.dartmouth.edu/
+- Download the dataset
 - Use the functionality located in `/src/preprocessing` to generate the processed datasets.
   - `get_studentlife_dataset()` generates the dataset based on a granularity (`nb_min`).
   - `generate_clean_dataset()` cleans the dataset by removing inconsistencies. 
