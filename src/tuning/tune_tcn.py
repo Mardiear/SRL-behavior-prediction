@@ -1,0 +1,74 @@
+# src/tuning/tune_tcn.py
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv1D, BatchNormalization, Dropout, Dense
+from tensorflow.keras.optimizers import Adam
+from skopt import gp_minimize
+from skopt.space import Integer, Real, Categorical
+from skopt.utils import use_named_args
+import numpy as np
+import pandas as pd
+
+# Load data
+data = pd.read_csv('../data/processed/time_windows_dataset.csv')
+X = data.drop(columns=['OSLQ_score']).values
+y = data['OSLQ_score'].values
+
+# Reshape data for TCN
+X = X.reshape((X.shape[0], X.shape[1], 1))
+
+# Define hyperparameter space
+space = [
+    Integer(1, 3, name='num_layers'),
+    Integer(32, 256, name='filters'),
+    Integer(3, 7, name='kernel_size'),
+    Real(0.0, 0.5, name='dropout_rate'),
+    Categorical([True, False], name='batch_normalization'),
+    Categorical([True, False], name='skip_connections')
+]
+
+
+# Define the model-building function
+def build_tcn(num_layers, filters, kernel_size, dropout_rate, batch_normalization, skip_connections):
+    model = Sequential()
+    for i in range(num_layers):
+        model.add(Conv1D(filters, kernel_size, activation='relu', padding='causal'))
+        if batch_normalization:
+            model.add(BatchNormalization())
+        model.add(Dropout(dropout_rate))
+        if skip_connections and i > 0:
+            model.add(Conv1D(filters, kernel_size, activation='relu', padding='causal'))
+    model.add(Flatten())
+    model.add(Dense(1))
+    return model
+
+
+# Define the objective function for Bayesian optimization
+@use_named_args(space)
+def objective(**params):
+    model = build_tcn(**params)
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='mse')
+
+    # Split data into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Train the model
+    history = model.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_test, y_test), verbose=0)
+
+    # Evaluate the model
+    loss = model.evaluate(X_test, y_test, verbose=0)
+    return loss
+
+
+# Perform Bayesian optimization
+res = gp_minimize(objective, space, n_calls=100, random_state=42)
+
+# Print the best hyperparameters
+print("Best hyperparameters:")
+print(f"Number of layers: {res.x[0]}")
+print(f"Filters: {res.x[1]}")
+print(f"Kernel size: {res.x[2]}")
+print(f"Dropout rate: {res.x[3]}")
+print(f"Batch normalization: {res.x[4]}")
+print(f"Skip connections: {res.x[5]}")
+print(f"Best MSE: {res.fun}")
