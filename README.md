@@ -10,8 +10,6 @@ SRL-Behavior-Prediction/
 │   ├── raw/                  # Raw sensor data (e.g., activity, calls, SMS, sleep, location, app usage)
 │   └── processed/            # Processed datasets (e.g., preprocessed_data.csv, time_windows_dataset.csv)
 │
-├── models/                   # Trained models (e.g., MLP, LSTM, CNN, TCN)
-│
 ├── results/                  # Experiment results and visualizations
 │   ├── figures/              # Plots and graphs
 │   └── metrics/              # Performance metrics (e.g., MSE, MAE)
