@@ -6,10 +6,6 @@ This repository contains the code to process the StudentLife Dataset, run sedent
 
 ```
 SRL-Behavior-Prediction/
-├── data/                     # Directory for raw and processed datasets
-│   ├── raw/                  # Raw sensor data (e.g., activity, calls, SMS, sleep, location, app usage)
-│   └── processed/            # Processed datasets (e.g., preprocessed_data.csv, time_windows_dataset.csv)
-│
 ├── results/                  # Experiment results and visualizations
 │   ├── figures/              # Plots and graphs
 │   └── metrics/              # Performance metrics (e.g., MSE, MAE)
