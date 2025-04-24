@@ -1,0 +1,162 @@
+{
+    "instructions": {
+        "intro": "This questionnaire is about your learning methods. Please answer the questions based on your personal experience.",
+        "scale": {
+            "description": "The scale uses numbers from 1 to 5, where 1 represents 'strongly disagree' and 5 represents 'strongly agree.'",
+            "options": {
+                "1": "Strongly Disagree",
+                "2": "Disagree",
+                "3": "Neutral",
+                "4": "Agree",
+                "5": "Strongly Agree"
+            }
+        },
+        "guidance": "Please select the option that best applies to you for each question. Your honest responses are greatly appreciated. Thank you for your cooperation and support!"
+    },
+    "questions": [
+        {
+            "id": 1,
+            "text": "I set standards for my assignments in courses.",
+            "subscale": "Goal Setting",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 2,
+            "text": "I set short-term (daily or weekly) goals as well as long-term goals (monthly or for the semester).",
+            "subscale": "Goal Setting",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 3,
+            "text": "I keep a high standard for my learning in my courses.",
+            "subscale": "Goal Setting",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 4,
+            "text": "I set goals to help me manage studying time for my courses.",
+            "subscale": "Goal Setting",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 5,
+            "text": "I don't compromise the quality of my work.",
+            "subscale": "Goal Setting",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 6,
+            "text": "I choose the location where I study to avoid too much distraction.",
+            "subscale": "Environment Structuring",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 7,
+            "text": "I find a comfortable place to study.",
+            "subscale": "Environment Structuring",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 8,
+            "text": "I know where I can study most efficiently for courses.",
+            "subscale": "Environment Structuring",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 9,
+            "text": "I choose a time with few distractions for studying for my online courses.",
+            "subscale": "Environment Structuring",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 10,
+            "text": "I try to take more thorough notes for my online courses because notes are even more important for learning online than in a regular classroom.",
+            "subscale": "Task Strategies",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 11,
+            "text": "I read aloud instructional materials posted online to fight against distractions.",
+            "subscale": "Task Strategies",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 12,
+            "text": "I prepare my questions before joining in the discussion.",
+            "subscale": "Task Strategies",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 13,
+            "text": "I work extra problems in my online courses in addition to the assigned ones to master the course content.",
+            "subscale": "Task Strategies",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 14,
+            "text": "I allocate extra studying time for my courses because I know it is time-demanding.",
+            "subscale": "Time Management",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 15,
+            "text": "I try to schedule the same time everyday or every week to study for my online courses, and I observe the schedule.",
+            "subscale": "Time Management",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 16,
+            "text": "Although we don't have to attend daily classes, I still try to distribute my studying time evenly across days.",
+            "subscale": "Time Management",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 17,
+            "text": "I find someone who is knowledgeable in course content so that I can consult with him or her when I need help.",
+            "subscale": "Help Seeking",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 18,
+            "text": "I share my problems with my classmates online so we know what we are struggling with and how to solve our problems.",
+            "subscale": "Help Seeking",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 19,
+            "text": "If needed, I try to meet my classmates face-to-face.",
+            "subscale": "Help Seeking",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 20,
+            "text": "I am persistent in getting help from the instructor through e-mail.",
+            "subscale": "Help Seeking",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 21,
+            "text": "I summarize my learning in online courses to examine my understanding of what I have learned.",
+            "subscale": "Self Evaluation",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 22,
+            "text": "I ask myself a lot of questions about the course material when studying for a course.",
+            "subscale": "Self Evaluation",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 23,
+            "text": "I communicate with my classmates to find out how I am doing in my classes.",
+            "subscale": "Self Evaluation",
+            "options": [1, 2, 3, 4, 5]
+        },
+        {
+            "id": 24,
+            "text": "I communicate with my classmates to find out what I am learning that is different from what they are learning.",
+            "subscale": "Self Evaluation",
+            "options": [1, 2, 3, 4, 5]
+        }
+    ]
+}
