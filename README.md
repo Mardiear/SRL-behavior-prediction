@@ -2,6 +2,8 @@
 
 This repository contains the code to process the StudentLife Dataset, run sedentary behaviour prediction experiments and process the results.
 
+The dataset is put on the “master“ Branche.
+
 ## Repository Structure
 
 ```
